@@ -133,13 +133,13 @@ fun loginDialog(navController: NavController){
                     val context = LocalContext.current
                     Button(onClick = {
                         navController.navigate(AppScreens.homeScreen.route)
-                                     /*if(passTxt == passTxtR){
+                                     if(passTxt == passTxtR){
                                          Toast.makeText(context,"Login correcto", Toast.LENGTH_SHORT).show()
                                          navController.navigate(AppScreens.homeScreen.route)
                                      }else{
                                          Toast.makeText(context,"Contraseña incorrecta", Toast.LENGTH_SHORT).show()
 
-                                     }*/
+                                     }
                     },
                         colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.purple_dark)), modifier = Modifier
                             .fillMaxWidth()
